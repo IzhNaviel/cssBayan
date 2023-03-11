@@ -1,0 +1,59 @@
+/* === COMMON START ===*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap'); 
+
+*, h1 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    padding: 0.5em 0;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+/* === COMMON END ===*/
+
+/* === HEADER START ===*/
+.header__size {
+    content: '';
+    height: 10em;
+}
+/* === HEADER END ===*/
+
+/* === ACCORDIN START ===*/
+
+.wrapper {
+    max-width: 50em;
+    margin: 0 auto;
+}
+
+
+.accordion__item {
+    border-top: 0.1em solid rgba(128, 128, 128, 0.2);
+    width: 100%;
+}
+
+label {
+    cursor: pointer;
+    display: block;
+    margin: 0.6em 0;
+    width: 100%;
+    font-weight: 400;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+input {
+    display: none;
+}
+/* === ACCORDIN END ===*/
+
+/* === FOOTER START ===*/
+/* === FOOTER END ===*/
