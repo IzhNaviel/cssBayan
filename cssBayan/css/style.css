@@ -5,8 +5,9 @@
 *, h1 {
     margin: 0;
     padding: 0;
-    list-style: none;
+    box-sizing: border-box;
 }
+
 
 h1 {
     font-size: 32px;
@@ -16,6 +17,10 @@ h1 {
 
 html, body {
     overflow-x: hidden;
+}
+
+body {
+    font-size: 1rem;
 }
 
 /* === COMMON END ===*/
@@ -28,32 +33,124 @@ html, body {
 /* === HEADER END ===*/
 
 /* === ACCORDIN START ===*/
+.container {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
 .wrapper {
     max-width: 50em;
     margin: 0 auto;
 }
 
-
-.accordion__item {
-    border-top: 0.1em solid rgba(128, 128, 128, 0.2);
+.accordion {
     width: 100%;
+    margin: auto;
+    cursor: pointer;
+    color: #0059D9;
+    font-weight: 700;
+    font-size: 1.3em;
 }
 
-label {
-    cursor: pointer;
-    display: block;
-    margin: 0.6em 0;
-    width: 100%;
-    font-weight: 400;
-    box-sizing: border-box;
-    z-index: 100;
+.accordion__item {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    flex-direction: column;
+    margin-bottom: 1em;
 }
 
 input {
     display: none;
 }
+
+input:checked~.acc-body {
+    height: 100%;
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+input:checked~.heading {
+    color: black;
+}
+
+input:checked ~.heading>.icon {
+    rotate: 180deg;
+    opacity: 1;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 100%;
+    border-top: .1em solid rgba(128, 128, 128, 0.3);
+    padding-top: .5em;
+}
+
+.icon {
+    background: url(../img/arrow-to-top-svgrepo-com.svg) 0 0/100% 100% no-repeat;
+    width: 1em;
+    height: 1em;
+    opacity: 0;
+    transition: all ease .8s;
+    fill: #0059D9;
+}
+
+.heading:hover {
+    color: black;
+}
+
+.heading:hover~.acc-body {
+    height: 100%;
+    color: black;
+    opacity: 1;
+}
+
+.heading:hover .icon {
+    rotate: 180deg;
+    opacity: 1;
+    transition: all ease .8s;
+    cursor: pointer;
+}
+
+.acc-body {
+    width: 100%;
+    padding-top: 1em;
+    max-width: 100%;
+    height: 0;
+    overflow: hidden;
+    margin: 0 auto;
+    opacity: 0;
+}
+
+img {
+    width: 90%;
+}
+
+.heading:hover~.acc-body {
+    opacity: 1;
+    width: 100%;
+}
+
+.heading:hover~.acc-body>img {
+    transition: all .6s;
+    width: 100%;
+}
+
+@media (min-width: 320px) and (max-width: 340px) {
+    body {
+        font-size: 80%;
+    }
+  }
 /* === ACCORDIN END ===*/
 
 /* === FOOTER START ===*/
+.footer {
+    content: '';
+    height: 10em;
+}
 /* === FOOTER END ===*/

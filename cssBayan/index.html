@@ -3,60 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSSBayan</title>
 </head>
 <body> 
-    <header class="header">
-        <div class="header__size"></div>
-    </header>
-    <main class="main">        
-            <div class="wrapper">
-                <h1>CSS Bayan</h1> 
-                <div class="accordion__wrapper">
-                    <div class="accordion">
-                        <div class="accordion__item">
-                            <input type="radio" name="acc" id="acc1" checked>
-                            <label for="acc1">You can't just copy and paste CSS</label>
-                            <div class="acc-body">
-                               <img src="img/copy-paste.jpg" class="accordion-img" alt="copy">
-                            </div>
+    <main class="container">    
+        <h1>CSS Bayan</h1>            
+        <div class="wrapper">
+            <div class="accordion__wrapper">
+                <div class="accordion">
+                    <label class="accordion__item">
+                        <input type="radio" name="acc" id="acc1" checked>
+                        <div class="heading">You can't just copy and paste CSS<i class="icon"></i></div>
+                        <div class="acc-body">
+                            <img src="./img/copy-paste.jpg" class="accordion-img" alt="copy">
                         </div>
-                        <div class="accordion__item">
-                            <input type="radio" name="acc" id="acc2" checked>
-                            <label for="acc1">Keep calm and carry on</label>
-                            <div class="acc-body">
-                                <p>MEM</p>
-                            </div>
-                        </div>    
-                        <div class="accordion__item">
-                            <input type="radio" name="acc" id="acc3" checked>
-                            <label for="acc1">Work-life balance</label>
-                            <div class="acc-body">
-                                <p>MEM</p>
-                            </div>
+                    </label>
+                    <label class="accordion__item">  
+                        <input type="radio" name="acc" id="acc2">
+                        <div class="heading">Keep calm and carry on<i class="icon"></i></div>
+                        <div class="acc-body">
+                            <img src="./img/keep-calm.jpg" class="accordion-img" alt="keep">
                         </div>
-                        <div class="accordion__item">
-                            <input type="radio" name="acc" id="acc4" checked>
-                            <label for="acc1">Dude, where is JS?</label>
-                            <div class="acc-body">
-                                <p>MEM</p>
-                            </div>
+                    </label>             
+                    <label class="accordion__item">
+                        <input type="radio" name="acc" id="acc3">
+                        <div class="heading">Work-life balance<i class="icon"></i></div>
+                        <div class="acc-body">
+                            <img src="./img/work-balance.jpg" class="accordion-img" alt="work-balance">
                         </div>
-                        <div class="accordion__item">
-                            <input type="radio" name="acc" id="acc5" checked>
-                            <label for="acc1">Relax and take it easy</label>
-                            <div class="acc-body">
-                                <p>MEM</p>
-                            </div>
+                    </label>
+                    <label class="accordion__item">
+                        <input type="radio" name="acc" id="acc4">
+                        <div class="heading">Dude, where is JS?<i class="icon"></i></div>
+                        <div class="acc-body">
+                            <img src="./img/dude.jpg" class="accordion-img" alt="dude">
                         </div>
-                    </div>
+                    </label>
+                    <label class="accordion__item">    
+                        <input type="radio" name="acc" id="acc5">
+                        <div class="heading">Relax and take it easy<i class="icon"></i></div>
+                        <div class="acc-body">
+                            <img src="./img/relax.jpg" class="accordion-img" alt="relax">
+                        </div>
+                    </label>
                 </div>
-            </div>    
             </div>
-    </main>  
-    <footer class="footer"></header>  
+        </div>    
+    </div>
+</main>  
 </body>
 </html>
